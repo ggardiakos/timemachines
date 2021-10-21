@@ -80,8 +80,8 @@ else:
     ELO_ENSEMBLE_SKATERS = []
 
 if __name__ == "__main__":
-    crawler = MicroCrawler(write_key='dc3d99aacb6b7a8a239395d7d96ba66f')
+    crawler = MicroCrawler(write_key='') <----Write Key
     crawler.set_repository(
         url='') # <--- Optionally include a link to your repo.
-    crawler.set_email("gardiakos.george@gmail.com")  # <--- Put your email here. Only used to send you a voucher if you win a daily prize
+    crawler.set_email("")  # <--- Put your email here. Only used to send you a voucher if you win a daily prize
     crawler.run(withdraw_all=True)
